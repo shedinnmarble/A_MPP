@@ -5,8 +5,4 @@ public class DecoyDuck extends Duck{
 		this.flyBehavior=new CanotFly();
 		this.quackBehavior=new MuteQuack();
 	}
-	@Override
-	public void display(){
-		System.out.println("\tdisplaying");
-	}
 }

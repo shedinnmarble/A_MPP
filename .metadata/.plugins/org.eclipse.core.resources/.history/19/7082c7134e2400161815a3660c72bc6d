@@ -15,8 +15,8 @@ public abstract class Duck {
 		System.out.println("\tswimming");
 	}
 
-	public abstract void display();
-		
-	
+	public void display() {
+		System.out.println("\tdisplaying");
+	}
 
 }
