@@ -1,8 +1,4 @@
-/**
- * 
- * @author 985219
- *
- */
+
 public final class Rectangle implements IShape{
 	private final double width;
 	private final double length;

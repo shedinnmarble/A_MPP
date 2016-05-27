@@ -1,8 +1,4 @@
-/**
- * 
- * @author 985219
- *
- */
+
 public final class Circle implements IShape {
 	private final double radius;
 
