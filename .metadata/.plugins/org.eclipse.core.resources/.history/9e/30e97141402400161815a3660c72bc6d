@@ -1,0 +1,5 @@
+package w1_Duck;
+
+public interface FlyBehavior {
+	void fly();
+}

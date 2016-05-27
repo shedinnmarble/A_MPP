@@ -1,0 +1,5 @@
+package w1_Duck;
+
+public interface QuackBehavior {
+	void quack();
+}
