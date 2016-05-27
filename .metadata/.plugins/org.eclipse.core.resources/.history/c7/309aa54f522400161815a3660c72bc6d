@@ -1,0 +1,9 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IShape[] shape = { new Circle(11), new Rectangle(11, 22), new Triangle(11, 13) };
+	}
+
+}
