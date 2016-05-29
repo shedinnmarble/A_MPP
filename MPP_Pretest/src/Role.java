@@ -1,0 +1,26 @@
+
+public class Role {
+
+	private RoleType roleType;
+
+	public enum RoleType {
+		Developer, Tester,
+		/**
+		 * project manager
+		 */
+		ProjectManager, ScrumMaster
+	}
+
+	public RoleType getRoleType() {
+		return roleType;
+	}
+
+	public void setRoleType(RoleType roleType) {
+		this.roleType = roleType;
+	};
+
+	public void ChangeRole(Employee employee, RoleType roleType) {
+
+	}
+
+}

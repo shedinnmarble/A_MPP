@@ -1,0 +1,23 @@
+
+public class Role {
+	
+	public enum Strings{
+		Developer,
+		Tester,
+		ProjectManager,
+		ScrumMaster
+		
+		
+	};
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	
+	
+}

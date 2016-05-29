@@ -1,0 +1,7 @@
+import java.util.List;
+
+public class Project  {
+	private ProjectManager projectManager;
+	private List<SpSpirint> sprintList;
+	private List<Feature> featureList;
+}

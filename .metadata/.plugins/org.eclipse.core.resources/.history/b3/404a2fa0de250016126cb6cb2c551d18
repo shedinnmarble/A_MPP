@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Developer extends Employee {
+
+	public Developer(String name){
+		super.name=name;
+		
+		Role developer=new Role();
+		developer.setRoleType(Role.RoleType.Developer);
+		Role master=new Role();
+		master.setRoleType(Role.RoleType.ScrumMaster);
+		super.roleList = new ArrayList<Role>();
+		super.roleList.add(developer);
+	}
+	
+}

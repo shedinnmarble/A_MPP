@@ -1,0 +1,19 @@
+
+public class Role {
+	
+	private enum RoleNames{
+		STRING_ONE("Developers"),
+		
+	};
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	
+	
+}

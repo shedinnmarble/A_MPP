@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> employees = new ArrayList<Employee>();
+		// project manager
+		ProjectManager pm = new ProjectManager("PM:Dewei", "ssn_01", "xx@xx.com", "ID:001");
+		List<Project> projects = new ArrayList<Project>();
+		// projects
+		Project pj1 = new Project("pj1Name", pm, null, null);
+		Project pj2 = new Project("pj1Name2", pm, null, null);
+		projects.add(pj1);
+		projects.add(pj2);
+		pm.setProjectList(projects);
+		employees.add(pm);
+		// Scrum Master
+		ScrumMaster sm = new ScrumMaster("SM:awad", "ssn_02", "xx@xx.com", "ID:002");
+		List<Sprint> sprintsList = new ArrayList<Sprint>();
+		Sprint sprint1 = new Sprint("sprint1", pj1, null, sm);
+		sprintsList.add(sprint1);
+		sm.setSprintList(sprintsList);
+		employees.add(sm);
+		//Developer
+		List<Feature> featurerList=new ArrayList<Feature>();
+		Developer developer1=new Developer("Dv:daliu", "ssn_03", "xx@xx.com", "ID:003");
+		Feature f1=new Feature("feature1",pj1,sprint1);
+		featurerList.add(f1);
+		developer1.setFeatureList(featurerList);
+		employees.add(developer1);
+		//Tester
+	
+		Tester tester1=new Tester("Tester:guimei", "ssn_03", "xx@xx.com", "ID:004");		
+		tester1.setFeatureList(featurerList);
+		employees.add(tester1);
+		for (Employee employee : employees) {
+			System.out.println(employee.getClass().getSimpleName() + "'s resonbitilities:");
+			System.out.println("Employee Name:"+employee.name);
+			for(Role role:employee.roleList){
+				System.out.println("Role Name:"role.getRoleType().toString());
+			}
+			
+			employee.showResponsibilities();
+		}
+	}
+
+}

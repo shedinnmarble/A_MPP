@@ -1,0 +1,5 @@
+
+public class ScrumMaster extends Employee {
+
+	private List<Sprint> sprintList;
+}

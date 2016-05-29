@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> employees = new ArrayList<Employee>();
+		// project manager
+		ProjectManager pm = new ProjectManager("PM:Dewei", "ssn_01", "xx@xx.com", "ID:001");
+		List<Project> projects = new ArrayList<Project>();
+		//projects
+		Project pj1 = new Project("pj1Name", pm, null, null);
+		Project pj2 = new Project("pj1Name2", pm, null, null);
+		projects.add(pj1);
+		projects.add(pj2);
+		pm.setProjectList(projects);
+		employees.add(pm);
+		//Scrum Master
+		ScrumMaster sm=new ScrumMaster("SM:awad", "ssn_02", "xx@xx.com", "ID:002");
+		Sprint sprint1=new Sprint("sprint1",pj1,null,sm);
+
+		for (Employee employee : employees) {
+			System.out.println(employee.getClass().getSimpleName() + "'s resonbitilities:");
+			employee.showResponsibilities();
+		}
+	}
+
+}

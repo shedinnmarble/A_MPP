@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> employees = new ArrayList<Employee>();
+		ProjectManager pm = new ProjectManager("PM:Dewei", "ssn_01", "xx@xx.com", "ID:001");
+		List<Project> projects=new ArrayList<Project>();
+
+		for (Employee employee : employees) {
+			System.out.println(employee.getClass().getSimpleName() + "\thas Roles:");
+			employee.showResponsibilities();
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class Developer extends Employee {
+
+	public Developer(){
+		
+	}
+	public void showRes()
+	{
+		roleList= new ArrayList<Role>();
+		Role role=new Role();
+		role.setRoleName("fucker");
+		
+		roleList.add(role);
+		
+		
+	}
+}

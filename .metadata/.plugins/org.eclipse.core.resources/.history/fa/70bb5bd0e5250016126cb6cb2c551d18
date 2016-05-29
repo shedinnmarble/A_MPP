@@ -1,0 +1,13 @@
+
+public class Client {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee[] employees={new Developer("dewei")};
+		for(Employee employee:employees){
+			System.out.println(employee.getClass().getSimpleName()+"\thas Roles:");
+			employee.showResponsibilities();
+		}
+	}
+
+}

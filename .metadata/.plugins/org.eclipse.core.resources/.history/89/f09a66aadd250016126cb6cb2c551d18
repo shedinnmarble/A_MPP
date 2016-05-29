@@ -1,0 +1,5 @@
+
+public class Spirint {
+	private Project project;
+	private List<Feature> featureList;
+}
