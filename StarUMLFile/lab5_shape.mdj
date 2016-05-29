@@ -826,7 +826,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Circle",
+											"text": "Circle<<imutable>>",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -1166,11 +1166,11 @@
 											"containerExtending": false,
 											"left": 397,
 											"top": 271,
-											"width": 102,
+											"width": 145.95166015625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Rectangle",
+											"text": "Rectangle<<imutable>>",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -1235,7 +1235,7 @@
 									"containerExtending": false,
 									"left": 392,
 									"top": 264,
-									"width": 112,
+									"width": 155.95166015625,
 									"height": 25,
 									"autoResize": false,
 									"stereotypeLabel": {
@@ -1281,7 +1281,7 @@
 											"containerExtending": false,
 											"left": 397,
 											"top": 294,
-											"width": 102,
+											"width": 145.95166015625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1309,7 +1309,7 @@
 											"containerExtending": false,
 											"left": 397,
 											"top": 309,
-											"width": 102,
+											"width": 145.95166015625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1329,7 +1329,7 @@
 									"containerExtending": false,
 									"left": 392,
 									"top": 289,
-									"width": 112,
+									"width": 155.95166015625,
 									"height": 38,
 									"autoResize": false
 								},
@@ -1363,7 +1363,7 @@
 											"containerExtending": false,
 											"left": 397,
 											"top": 332,
-											"width": 102,
+											"width": 145.95166015625,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
@@ -1383,7 +1383,7 @@
 									"containerExtending": false,
 									"left": 392,
 									"top": 327,
-									"width": 112,
+									"width": 155.95166015625,
 									"height": 23,
 									"autoResize": false
 								},
@@ -1447,7 +1447,7 @@
 							"containerExtending": false,
 							"left": 392,
 							"top": 264,
-							"width": 112,
+							"width": 155.95166015625,
 							"height": 176,
 							"autoResize": false,
 							"stereotypeDisplay": "label",
@@ -1542,7 +1542,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Triangle",
+											"text": "Triangle<<imutable>>",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5
 										},
@@ -1877,8 +1877,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 358,
-									"top": 192,
+									"left": 366,
+									"top": 193,
 									"width": 67.55810546875,
 									"height": 13,
 									"autoResize": false,
@@ -1911,8 +1911,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 376,
-									"top": 195,
+									"left": 385,
+									"top": 198,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -1944,8 +1944,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 420,
-									"top": 185,
+									"left": 428,
+									"top": 184,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -1976,7 +1976,7 @@
 								"$ref": "AAAAAAFU9CWcAXdubmw="
 							},
 							"lineStyle": 1,
-							"points": "423:263;390.2:127",
+							"points": "437:263;392.3176470588235:127",
 							"stereotypeDisplay": "label",
 							"showVisibility": true,
 							"showProperty": true,
@@ -2197,7 +2197,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Circle",
+					"name": "Circle<<imutable>>",
 					"visibility": "public",
 					"attributes": [
 						{
@@ -2245,7 +2245,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Rectangle",
+					"name": "Rectangle<<imutable>>",
 					"ownedElements": [
 						{
 							"_type": "UMLInterfaceRealization",
@@ -2327,7 +2327,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Triangle",
+					"name": "Triangle<<imutable>>",
 					"ownedElements": [
 						{
 							"_type": "UMLInterfaceRealization",
