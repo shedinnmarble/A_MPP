@@ -1,0 +1,23 @@
+package application;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		primaryStage.setTitle("Address Form");
+		Label label1=new Label("Name");
+		label1.setText("");
+		primaryStage.show();
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	
+}
