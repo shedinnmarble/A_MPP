@@ -1,8 +1,0 @@
-package w1_Duck;
-
-public class CannotFly implements FlyBehavior {
-
-	public void fly() {
-		// TO
-	
-}

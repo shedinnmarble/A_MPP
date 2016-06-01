@@ -1,0 +1,24 @@
+package w1_Duck;
+
+public abstract class Duck {
+	private IFlyBehavior flyBehavior;
+	private IQuackBehavior quackBehavior;
+
+	public void fly(){
+		flyBehavior.fly();
+	}
+	public void quack() {
+		quackBehavior.quack();
+	}
+
+	public void swim() {
+		System.out.println("\tswimming");
+	}
+	public void setFlyBehavior(IFlyBehavior b){
+		flyBehavior=b;
+	}
+	public abstract void display();
+		
+	
+
+}

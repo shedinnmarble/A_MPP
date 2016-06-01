@@ -1,0 +1,5 @@
+import java.util.List;
+
+public class ProjectManager extends Employee{
+	private List<Project> projectList;
+}

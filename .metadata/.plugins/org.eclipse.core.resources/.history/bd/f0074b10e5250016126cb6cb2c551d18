@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProjectManager extends Employee{
+	private List<Project> projectList;
+
+	public ProjectManager(String name){
+
+//		super.roleList = new ArrayList<Role>();
+//		super.roleList.add(developer);
+//		super.roleList.add(master);
+	}
+
+	public List<Project> getProjectList() {
+		return projectList;
+	}
+
+	public void setProjectList(List<Project> projectList) {
+		this.projectList = projectList;
+	}
+
+	@Override
+	protected void showResponsibilities() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

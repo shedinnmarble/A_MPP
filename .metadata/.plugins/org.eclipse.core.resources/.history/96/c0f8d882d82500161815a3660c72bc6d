@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import Role.RoleType;
+
+public class Developer extends Employee {
+
+	public Developer(String name,List<Role> role){
+		this.name=name;
+		Role developer=new Role();
+		developer.setRoleType(RoleType.Developer);
+	}
+	public void showRes()
+	{
+		roleList= new ArrayList<Role>();
+		Role role=new Role();
+		role.setRoleName("fucker");
+		
+		roleList.add(role);
+		
+		
+	}
+}

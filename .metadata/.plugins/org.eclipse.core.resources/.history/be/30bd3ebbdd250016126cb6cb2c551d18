@@ -1,0 +1,7 @@
+import java.util.List;
+
+public class Spirint {
+	private Project project;
+	private List<Feature> featureList;
+	private ScrumMaster scrumMaster;
+}

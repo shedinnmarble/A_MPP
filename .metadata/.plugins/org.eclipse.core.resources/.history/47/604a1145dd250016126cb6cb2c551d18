@@ -1,0 +1,6 @@
+
+public class Project  {
+	private ProjectManager projectManager;
+	private List<Sprint> sprintList;
+	private List<Feature> featureList;
+}

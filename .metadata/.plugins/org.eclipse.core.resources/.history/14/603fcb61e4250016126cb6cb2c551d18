@@ -1,0 +1,5 @@
+import java.util.List;
+
+public class Tester extends Employee {
+	private List<Feature> featureList;
+}
