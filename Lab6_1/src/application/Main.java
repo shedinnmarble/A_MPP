@@ -23,48 +23,64 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
-    primaryStage.setTitle("Address Form");
-    GridPane grid = new GridPane();
-    grid.setAlignment(Pos.CENTER);
-    grid.setHgap(10);
-    grid.setVgap(10);
-   // grid.setPadding(new Insets(25, 25, 25, 25));
-    Text scenetitle = new Text("Welcome");
-    //scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
-    grid.add(scenetitle, 0, 0, 2, 1);
+		primaryStage.setTitle("Address Form");
+		GridPane grid = new GridPane();
+		grid.setAlignment(Pos.CENTER);
+		grid.setHgap(10);
+		grid.setVgap(10);
+		// grid.setPadding(new Insets(25, 25, 25, 25));
+		// Text scenetitle = new Text("Welcome");
+		// scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+		// grid.add(scenetitle, 0, 0, 2, 1);
 
-    Label userName = new Label("User Name:");
-    grid.add(userName, 0, 1);
+		Label lbName = new Label("Name:");
+		grid.add(lbName, 0, 1);
 
-    TextField userTextField = new TextField();
-    grid.add(userTextField, 1, 1);
+		TextField txtName = new TextField();
+		grid.add(txtName, 0, 2);
 
-    Label pw = new Label("Password:");
-    grid.add(pw, 0, 2);
+		Label lbStreet = new Label("Street");
+		grid.add(lbStreet, 1, 1);
 
-    PasswordField pwBox = new PasswordField();
-    grid.add(pwBox, 1, 2);
-    
-    Button btn = new Button("Sign in");
-    HBox hbBtn = new HBox(10);
-    hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
-    hbBtn.getChildren().add(btn);
-    grid.add(hbBtn, 1, 4);
-    final Text actiontarget = new Text();
-    grid.add(actiontarget, 1, 6);
-    btn.setOnAction(new EventHandler<ActionEvent>(){
+		TextField txtStreet = new TextField();
+		grid.add(txtStreet, 1, 2);
 
-		@Override
-		public void handle(ActionEvent arg0) {
-			// TODO Auto-generated method stub
-			actiontarget.setFill(Color.FIREBRICK);
-			actiontarget.setText("fuck"+pwBox.getText());
-		}
-    	
-    });
-    Scene scene = new Scene(grid, 300, 275);
-    primaryStage.setScene(scene);
-        primaryStage.show();
+		Label lbCity = new Label("City");
+		grid.add(lbCity, 2, 1);
+		TextField txtCity = new TextField();
+		grid.add(txtCity, 2, 2);
+
+		Label lbState = new Label("State");
+		grid.add(lbState, 0, 3);
+		TextField txtState = new TextField();
+		grid.add(txtState, 0, 4);
+
+		Label lbZip = new Label("Zip");
+		grid.add(lbZip, 1, 3);
+		TextField txtZip = new TextField();
+		grid.add(txtZip, 1, 4);
+
+		Button btn = new Button("Submit");
+		HBox hbBtn = new HBox(10);
+		hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
+		hbBtn.getChildren().add(btn);
+		grid.add(hbBtn, 1, 5);
+		final Text actiontarget = new Text();
+		grid.add(actiontarget, 1, 6);
+		btn.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				System.out.println(txtName.getText());
+				System.out.println(txtStreet.getText());
+				System.out.println(txtCity.getText() + ", " + txtState.getText() + ", " + txtZip.getText());
+			}
+
+		});
+		Scene scene = new Scene(grid, 500, 300);
+		primaryStage.setScene(scene);
+		primaryStage.show();
 	}
 
 	public static void main(String[] args) {
