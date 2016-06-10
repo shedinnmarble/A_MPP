@@ -2,6 +2,7 @@ package prob1B;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -10,6 +11,6 @@ import java.util.stream.Stream;
 public class Prob1B {
     public static void main(String[] args){
         Stream<String> stringStream=Arrays.asList("Bill","Thomas","Mary").stream();
-       // stringStream.forEach();
+       System.out.println(stringStream.collect(Collectors.joining(",")));
     }
 }

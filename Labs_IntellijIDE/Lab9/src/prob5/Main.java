@@ -17,14 +17,17 @@ public class Main {
                 new Employee("Donald", "Trump", 100000));
 
         //your stream pipeline here
-        list.stream()
-                .filter(x -> x.getSalary() > 100000 && x.getLastName().charAt(0) > 'M').sorted(new Comparator<Employee>() {
-            @Override
-            public int compare(Employee o1, Employee o2) {
-                return o1.getFirstName().compareTo(o2.getFirstName());
-            }
-        })
-                .collect(Collectors.toList()).forEach(x -> System.out.println(x.getFirstName() + " " + x.getLastName()));
+
+//      String s=  list.stream()
+//                .filter(x -> x.getSalary() > 100000 && x.getLastName().charAt(0) > 'M')
+//                .sorted()
+//                .map(x->x.getFirstName()+" "+x.getLastName())
+//                .collect(Collectors.joining(","));
+//
+//        System.out.println(s);
+
+      String s=  LambdaLibrary.NAMES_IN_EMPLOYEE.apply(list,100000,"M");
+        System.out.println(s);
 
     }
 

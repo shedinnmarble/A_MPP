@@ -1,6 +1,6 @@
-package prob5;
+package prob6;
 
-public class Employee implements Comparable{
+public class Employee {
 	String firstName, lastName;
 	
 
@@ -46,11 +46,6 @@ public class Employee implements Comparable{
 
 	public void setSalary(int salary) {
 		this.salary = salary;
-	}
-
-	@Override
-	public int compareTo(Object o) {
-		return this.getFirstName().compareTo(((Employee)o).getFirstName());
 	}
 }
 
