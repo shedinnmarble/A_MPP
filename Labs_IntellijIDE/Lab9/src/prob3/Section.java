@@ -1,6 +1,7 @@
 package prob3;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,6 +19,6 @@ public class Section {
 	
 	//support method for the main method -- for testing
 	private static Stream<String> nextStream() {
-		return Arrays.asList("aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh", "iii").stream();
+		return Arrays.asList("aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "iii", "hhh").stream().sorted(Comparator.comparing(x->x));
 	}
 }
