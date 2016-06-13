@@ -15,4 +15,6 @@ public class LambdaLibrary {
                     .filter(employee -> employee.getSalary() > salary && employee.getLastName().charAt(0) > lastNameChar)
                     .collect(Collectors.toList())
                     .size();
+
+
 }

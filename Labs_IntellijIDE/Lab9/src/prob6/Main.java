@@ -17,7 +17,8 @@ public class Main {
 		
 		//print the number of Employees in list whose salary > 100000 and whose last name begins
 		//with a letter that comes after the letter 'E'
-		
+	int count=	LambdaLibrary.EMPLOYEE_COUNT_BY_SALARY_LASTNAME.apply(list,100000,'E');
+		System.out.println(count);
 		//print a list of sorted full names - all upper case -- of Employees with
 		//salary > 85000 and whose first name begins with a letter that comes before  the letter 'R'
 
