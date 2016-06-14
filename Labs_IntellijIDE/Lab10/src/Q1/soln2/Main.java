@@ -39,8 +39,9 @@ public class Main {
 				.sorted()
 				.collect(Collectors.joining(", "));
 	}
-	public static boolean salaryGreaterThan100000(Employee employee){
-		return employee.getSalary()>100000;
+
+	public static boolean salaryGreaterThan100000(Employee employee) {
+		return employee.getSalary() > 100000;
 	}
 	public static boolean lastNameAfterMEmployee(Employee employee){
 		return employee.getLastName().charAt(0)>'M';
@@ -48,7 +49,7 @@ public class Main {
 	private static void printEmps(List<Employee> employeeList){
 		System.out.println(asString(employeeList));
 	}
-	private static String fullName(Employee e) {
+	public static String fullName(Employee e) {
 		return e.getFirstName() + " " + e.getLastName();
 	}
 
