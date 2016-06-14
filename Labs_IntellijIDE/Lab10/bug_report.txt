@@ -1,0 +1,24 @@
+	Joe Smith
+	reportedBy: Corazza
+	classname: $Proxy2
+	description: Should use Logger
+	severity: 1
+	
+	Joe Smith
+	reportedBy: Corazza
+	classname: $Proxy2
+	description: computePerimeter incorrect
+	severity: 2
+	
+	Tom Jones
+	reportedBy: Corazza
+	classname: $Proxy2
+	description: computePerimeter incorrect
+	severity: 0
+	
+	Tom Jones
+	reportedBy: Corazza
+	classname: $Proxy2
+	description: 
+	severity: 1
+	
