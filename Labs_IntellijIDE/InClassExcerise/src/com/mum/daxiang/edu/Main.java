@@ -1,6 +1,10 @@
 package com.mum.daxiang.edu;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+import java.util.function.Predicate;
+>>>>>>> 4cee95509fca0b801ecdcc2523f5aeb06188c735
 import java.util.stream.Stream;
 
 public class Main {

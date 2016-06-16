@@ -1,5 +1,6 @@
 package com.mum.daxiang.edu;
 
+<<<<<<< HEAD
 class Manager extends Employee {
 	public Manager(String name, int salary) {
 		super(name, salary);
@@ -20,4 +21,13 @@ class Manager extends Employee {
 	//Manager uses Employee version
 
 	private int bonus;
+=======
+/**
+ * Created by 985219 on 6/15/2016.
+ */
+public class Manager  extends Employee{
+    public Manager(String name) {
+        super(name);
+    }
+>>>>>>> 4cee95509fca0b801ecdcc2523f5aeb06188c735
 }
