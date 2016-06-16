@@ -1,10 +1,9 @@
 package com.mum.daxiang.edu;
 
-<<<<<<< HEAD
+
 import java.util.ArrayList;
-=======
-import java.util.function.Predicate;
->>>>>>> 4cee95509fca0b801ecdcc2523f5aeb06188c735
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Main {
@@ -17,9 +16,22 @@ public class Main {
         System.out.println(countOccurrents2(arr,"2"));
     //test 2
         ArrayList<Manager> bosses = new ArrayList<>();
-        ArrayList<Employee> empls=bosses;
-        
+        //ArrayList<Employee> empls=bosses;
+        ArrayList<? super Manager> managerList=new ArrayList<Manager>();
+        managerList.add(new Manager("Dewei",1));
+        managerList.add(new Manager("Dewei",1));
 
+        ArrayList<? super Manager> employeeList=new ArrayList<Employee>();
+        //employeeList.add(new Manager());
+
+        //Producer extends, Consumer Super
+        //you can't add anything to ? extends T type,
+        // but you can only write T to ?super T
+
+        List<? extends Number> foo3 = new ArrayList<Number>();
+        List<Integer> integerList=new ArrayList<>();
+        integerList.add(1);
+        foo3=integerList;
     }
 
     public static <T>  int countOccurrents(T[] arr,T target){
@@ -39,7 +51,7 @@ public class Main {
         return count;
     }
     public static <T>  int countOccurrents2(T[] arr,T target){
-        return (int)Stream.of(arr).filter(x->{
+        return (int) Stream.of(arr).filter(x->{
             if(target==null)
                 return x==target;
             return x.equals(target);
